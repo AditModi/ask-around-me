@@ -45,21 +45,21 @@ Vue.component('iot', IoT)
 Vue.config.productionTip = false
 Vue.prototype.$appName = 'Ask Around Me'
 // Google Maps key - see https://developers.google.com/maps/documentation/javascript/get-api-key
-Vue.prototype.$GoogleMapsKey = '<< Enter your value here >>'
+Vue.prototype.$GoogleMapsKey = '***'
 
 // API Gateway endpoint - e.g. https://abc123abc.execute-api.us-east-1.amazonaws.com
-Vue.prototype.$APIurl = '<< Enter your value here >>'
+Vue.prototype.$APIurl = '***'
 
 // ** Websocket connection **
 
 //  PoolId: Retrieve this with the CLI command: aws cognito-identity list-identity-pools --max-results 10
-Vue.prototype.$poolId = '<< Enter your value here >>', // 'YourCognitoIdentityPoolId'
+Vue.prototype.$poolId = '***', // 'YourCognitoIdentityPoolId'
 
 //  IoTendpoint: Retrieve this with the CLI command: aws iot describe-endpoint --endpoint-type iot:Data-ATS
-Vue.prototype.$host = '<< Enter your value here >>', // 'YourAwsIoTEndpoint', e.g. 'prefix.iot.us-east-1.amazonaws.com'
+Vue.prototype.$host = '***', // 'YourAwsIoTEndpoint', e.g. 'prefix.iot.us-east-1.amazonaws.com'
 
 //  This is the region you selected in the SAM template deployment.
-Vue.prototype.$region = '<< Enter your value here >>' // Your region
+Vue.prototype.$region = 'us-east-1' // Your region
 
 /* ===================================================
                     END CONFIGURATION
